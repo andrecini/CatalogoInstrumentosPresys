@@ -38,6 +38,8 @@
                 <option value="0-55 mV">0-55 mV</option>
                 <option value="1-5 Vcc">1-5 Vcc</option>
                 <option value="0-10 Vcc">0-10 Vcc</option>
+                <option value="F">até 30 Hz / 300 mVpp / 30 Vpp</option>
+                <option value="pressao">0-200 mmH20 / 0-14500 psi</option>
             </select>
         </div>
 
@@ -47,10 +49,11 @@
 
         <select class="btn btn-secondary dropdown-toggle" style="width: 200px;">
             <option selected>Escolha uma Opção</option>
-            <option value="universal">Termopar-(pt-100)-mA-Vcc-Relé(SPDT)</option>
+            <option value="universal">mA-Vcc</option>
+            <option value="universalF">Termopar-(pt-100)-mA-Vcc-Relé(SPST/SPDT)-psi</option>
             <option value="universalF">Termopar-(pt-100)-mA-Vcc-F-Relé(SPDT)</option>
             <option value="universal">Termopar-(pt-100)-mA-Vcc-Relé(SPST)</option>
-            
+            <option value="universal">Termopar-(pt-100)-mA-Vcc-Relé(SPST)-F-mVpp-Vpp</option>
         </select>
         </div>
 
@@ -78,40 +81,13 @@
           <h3>Exatidão</h3>
           <select class="btn btn-secondary dropdown-toggle" style="width: 200px;">
               <option selected>Escolha uma opção</option>
-              <option value="saida1">±0,1% (TC-RTD-mA-Vcc)</option>
-              <option value="saida2">±0,1% F.S.(In), ±0,5% F.S.(Out)</option>
-              <option value="saida3">±Resolução display(In), ±0,5% F.S.(Out)</option>
-              <option value="saida4">±0,1% F.S.(In), ±0,5% F.S.(Out), ±1 Resolução(In-F)</option>
-
+              <option value="saida1">±0,25% SPAN</option>
+              <option value="saida2">±0,1 F.S. (In), ±0,2% F.S. (Out), ±1 Resolução(In-F)</option>
           </select>
         </div>
-        
+      
         <div>
-
-            <h3>
-                <input type="radio" value="Energy" name="linhaEscolhida">
-                Energy
-            </h3>
-        
-            <h3>
-                <input type="radio" value="Light" name="linhaEscolhida" checked>
-                Light
-            </h3>
-
-            <h3>
-              <input type="radio" value="Comum" name="linhaEscolhida" checked>
-              Comum
-            </h3>
-
-          <h3>
-            <input type="radio" value="Ligth-Energy" name="linhaEscolhida" checked>
-            Ligth-Energy
-          </h3>
-
-        </div>
-
-        <div>
-          <input class="btn btn-primary" type="button" value="FILTRAR"> 
+          <input class="btn btn-primary" type="button" value="FILTRAR">
         </div>
       </div>  
 
