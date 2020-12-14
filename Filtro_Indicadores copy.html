@@ -47,13 +47,10 @@
 
         <select class="btn btn-secondary dropdown-toggle" style="width: 200px;">
             <option selected>Escolha uma Opção</option>
-            <option value="4digitos">4 dígitos</option>
-            <option value="4/2digitos">4 dígitos e 1/2</option>
-            <option >8 dígitos</option>
-            <option >Calculador</option>
-            <option >Contador</option>
-            <option >Calibrador</option>
-
+            <option value="universal">Termopar-(pt-100)-mA-Vcc-Relé(SPDT)</option>
+            <option value="universalF">Termopar-(pt-100)-mA-Vcc-F-Relé(SPDT)</option>
+            <option value="universal">Termopar-(pt-100)-mA-Vcc-Relé(SPST)</option>
+            
         </select>
         </div>
 
@@ -92,14 +89,19 @@
         <div>
 
             <h3>
-                <input type="radio" value="advanced" name="linhaEscolhida">
-                Advanced
+                <input type="radio" value="Energy" name="linhaEscolhida">
+                Energy
             </h3>
         
             <h3>
-                <input type="radio" value="standard" name="linhaEscolhida" checked>
-                Standard
+                <input type="radio" value="Light" name="linhaEscolhida" checked>
+                Light
             </h3>
+
+            <h3>
+              <input type="radio" value="Comum" name="linhaEscolhida" checked>
+              Comum
+          </h3>
 
         </div>
 
